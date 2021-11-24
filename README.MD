@@ -20,4 +20,4 @@ React.createElement("span", {span의 property}, “span의 내용”)
 리액트는 JS -> HTML 순서
 
 JS가 element를 생성하고 React JS가 그것을 HTML로 번역하는 것
-React JS는 업데이트 해야 하는 HTML을 업데이트 할 수 있음
+React JS는 업데이트 해야 하는 HTML을 업데이트 할 수 있음.
