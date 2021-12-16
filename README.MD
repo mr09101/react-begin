@@ -29,3 +29,16 @@ property에 eventListener 넣는 것도 가능.
 마우스엔터 - {onMouseEnter: () => console.log("mouse enter")}
 
 혹시 콘솔에 안 뜨는 경우 event listener가 소문자, 대문자로 잘 적혀있는지 확인해 보세요
+
+JSX – 자바스크립트를 확장한 문법
+보통의 HTML과 비슷. 그러나 property를 HTML 태그의 속성처럼 적으면 됨
+const Title = (
+console.log("mouse enter")}>
+Hello I'm a span
+
+);
+style={{ backgroundColor: "tomato" }} -> 스타일은 {} 2개임
+JSX를 브라우저가 온전히 이해하지 못하므로 이해할 수 있게
+https://unpkg.com/@babel/standalone/babel.min.js 를 설치해야함
+-> JSX로 적은 코드를 브라우저가 이해할 수 있는 형태로 바꿔줌
+바벨을 가져온 뒤 script type="text/babel"로 적어줘야 인식함
