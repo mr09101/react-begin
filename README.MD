@@ -1,4 +1,3 @@
-
 리액트 공부 스타트 공부하자!
 바닐라Js 리액트사용 비교
 
@@ -21,3 +20,12 @@ React.createElement("span", {span의 property}, “span의 내용”)
 
 JS가 element를 생성하고 React JS가 그것을 HTML로 번역하는 것
 React JS는 업데이트 해야 하는 HTML을 업데이트 할 수 있음.
+
+두 가지 const를 render 하고 싶은 경우 div를 만든다
+그리고 React.createElement("div", null, [span, btn]); 와 같이 배열을 만들어서 const를 넣어준다.
+
+property에 eventListener 넣는 것도 가능.
+클릭 - {onClick: () => console.log("I'm clicked")}
+마우스엔터 - {onMouseEnter: () => console.log("mouse enter")}
+
+혹시 콘솔에 안 뜨는 경우 event listener가 소문자, 대문자로 잘 적혀있는지 확인해 보세요
