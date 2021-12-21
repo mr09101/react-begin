@@ -42,3 +42,15 @@ JSX를 브라우저가 온전히 이해하지 못하므로 이해할 수 있게
 https://unpkg.com/@babel/standalone/babel.min.js 를 설치해야함
 -> JSX로 적은 코드를 브라우저가 이해할 수 있는 형태로 바꿔줌
 바벨을 가져온 뒤 script type="text/babel"로 적어줘야 인식함
+
+리액트JS에서 데이터를 저장시켜 자동으로 리렌더링을 일으킬 수 있는 방법
+const data = React.useState();를 console.log 시키면
+[undefined, f ] -> undefined와 함수가 적힌 배열이 나타남
+undefined는 data이고 f는 data를 바꿀 때 사용하는 함수
+React.useState() 함수는 초기값을 설정할 수 있음
+즉, undefined는 초기값이고 두 번째 요소인 f는 그 값을 바꾸는 함수
+
+배열을 꺼내기
+const x = [1, 2, 3]
+const [a, b, c] = x;
+으로 꺼낼 수 있음
